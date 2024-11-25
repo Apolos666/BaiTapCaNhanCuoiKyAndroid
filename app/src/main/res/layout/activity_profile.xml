@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ho Va Ten: Tran Duc Quang"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MSV: 21115053120343"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+    <com.example.luyenandroid.custom.CustomBottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_navigation_menu" />
+</LinearLayout>
